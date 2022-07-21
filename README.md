@@ -3,6 +3,7 @@
 ### ***Requirements***
 - [A nerd font](https://github.com/ryanoasis/nerd-fonts)
 - [Nvim version ≥ 0.7](https://github.com/neovim/neovim) 
+- [ripgrep](https://github.com/BurntSushi/ripgrep#installation) 
 - ***Make sure to remove or move your current `nvim` directory***
 
 

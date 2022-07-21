@@ -30,20 +30,7 @@ gitsigns.setup {
   current_line_blame_formatter_opts = {
     relative_time = false,
   },
-  -- {
-  --   -- Actions
-  --   map({'n', 'v'}, '<leader>hs', ':Gitsigns stage_hunk<CR>')
-  --   map({'n', 'v'}, '<leader>hr', ':Gitsigns reset_hunk<CR>')
-  --   map('n', '<leader>hS', gs.stage_buffer)
-  --   map('n', '<leader>hu', gs.undo_stage_hunk)
-  --   map('n', '<leader>hR', gs.reset_buffer)
-  --   map('n', '<leader>hp', gs.preview_hunk)
-  --   map('n', '<leader>hb', function() gs.blame_line{full=true} end)
-  --   map('n', '<leader>tb', gs.toggle_current_line_blame)
-  --   map('n', '<leader>hd', gs.diffthis)
-  --   map('n', '<leader>hD', function() gs.diffthis('~') end)
-  --   map('n', '<leader>td', gs.toggle_deleted)
-  -- },
+
   sign_priority = 6,
   update_debounce = 100,
   status_formatter = nil, -- Use default
