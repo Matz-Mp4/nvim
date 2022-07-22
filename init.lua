@@ -16,4 +16,5 @@ require "user.alpha"
 require "user.whick-key"
 require "user.impatient"
 require "user.lualine"
+require "user.icon-picker"
 
