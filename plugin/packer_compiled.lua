@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/home/matz/.local/share/nvim/site/pack/packer/start/darkplus.nvim",
     url = "https://github.com/yong1le/darkplus.nvim"
   },
+  ["dressing.nvim"] = {
+    loaded = true,
+    path = "/home/matz/.local/share/nvim/site/pack/packer/start/dressing.nvim",
+    url = "https://github.com/stevearc/dressing.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/matz/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -143,6 +148,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/matz/.local/share/nvim/site/pack/packer/start/gruvbox-baby",
     url = "https://github.com/luisiacc/gruvbox-baby"
+  },
+  ["icon-picker.nvim"] = {
+    loaded = true,
+    path = "/home/matz/.local/share/nvim/site/pack/packer/start/icon-picker.nvim",
+    url = "https://github.com/ziontee113/icon-picker.nvim"
   },
   ["impatient.nvim"] = {
     loaded = true,

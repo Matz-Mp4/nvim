@@ -90,8 +90,14 @@ return packer.startup(function(use)
 
   --Which-key
   use "folke/which-key.nvim"
+ 
+  --icon-picker
+  use "stevearc/dressing.nvim"
+  use"ziontee113/icon-picker.nvim"
+  
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
+  
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
