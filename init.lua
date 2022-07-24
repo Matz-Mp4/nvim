@@ -17,4 +17,5 @@ require "user.whick-key"
 require "user.impatient"
 require "user.lualine"
 require "user.icon-picker"
+require "user.mason"
 
