@@ -9,7 +9,7 @@ npairs.setup {
   ts_config = {
     lua = { "string", "source" },
     javascript = { "string", "template_string" },
-    java = true,
+    java = false,
   },
   disable_filetype = { "TelescopePrompt", "spectre_panel" },
   fast_wrap = {
@@ -24,6 +24,7 @@ npairs.setup {
     highlight_grey = "LineNr",
   },
 }
+
 
 local cmp_autopairs = require "nvim-autopairs.completion.cmp"
 local cmp_status_ok, cmp = pcall(require, "cmp")
