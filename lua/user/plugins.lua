@@ -49,6 +49,8 @@ return packer.startup(function(use)
 
   --ColorSchemes
   use "Lunarvim/colorschemes"
+  -- use "lunarvim/onedarker.nvim"
+  -- use "navarasu/onedark.nvim"
   use "yong1le/darkplus.nvim"
   --use 'navarasu/onedark.nvim'
   use "luisiacc/gruvbox-baby"
