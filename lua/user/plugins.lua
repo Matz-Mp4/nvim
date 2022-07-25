@@ -82,6 +82,7 @@ return packer.startup(function(use)
   use 'JoosepAlviste/nvim-ts-context-commentstring'
   -- Git
   use "lewis6991/gitsigns.nvim"
+  use "f-person/git-blame.nvim"
   --Nvim-Tree
   use {
     'kyazdani42/nvim-tree.lua',
