@@ -13,8 +13,8 @@ local diagnostics = {
   sources = { "nvim_diagnostic" },
   sections = { "error", "warn" },
   symbols = { error = " ", warn = " " },
-  colored = true,
-  update_in_insert = false,
+  colored = false,
+  update_in_insert = true,
   always_visible = false,
 }
 local diff = {
@@ -31,7 +31,7 @@ local diff = {
 local mode = {
   "mode",
   fmt = function(str)
-    return "(" .. str .. ")"
+    return "-- " .. str .. " --"
   end,
 }
 
@@ -70,7 +70,7 @@ end
 lualine.setup({
   options = {
     icons_enabled = true,
-    theme = "auto",
+    theme = "palenight",
     section_separators = { left = '', right = '' },
     component_separators = { left = '│', right = '│' },
     disabled_filetypes = { "alpha", "dashboard", "NvimTree", "Outline" },

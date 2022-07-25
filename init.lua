@@ -19,6 +19,3 @@ require "user.lualine"
 require "user.icon-picker"
 require "user.mason"
 require "user.git-blame"
-
-
-
