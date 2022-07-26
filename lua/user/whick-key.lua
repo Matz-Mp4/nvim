@@ -168,8 +168,7 @@ local mappings = {
     r = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename" },
     s = { "<cmd>Telescope lsp_document_symbols<cr>", "Document Symbols" },
     S = {
-      "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>",
-      "Workspace Symbols",
+      "<cmd>lua vim.lsp.buf.signature_help()<cr>", "Function signature",
     },
   },
   s = {
