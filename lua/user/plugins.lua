@@ -100,6 +100,10 @@ return packer.startup(function(use)
   --icon-picker
   use "stevearc/dressing.nvim"
   use"ziontee113/icon-picker.nvim"
+
+  -- Debugging
+  use "mfussenegger/nvim-dap"
+  use "rcarriga/nvim-dap-ui"
   
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

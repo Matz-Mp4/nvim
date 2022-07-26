@@ -28,6 +28,6 @@ mason.setup({
 
 
 require("mason-lspconfig").setup {
-  ensure_installed = {"sumneko_lua", "rust_analyzer", "html", "jdtls","jsonls","clangd","pyright", "cpptools" },
+  ensure_installed = {"sumneko_lua", "rust_analyzer", "html", "jdtls","jsonls","clangd","pyright", "cpptools", "debugpy", "codelldb" },
   automatic_installation = true,
 }

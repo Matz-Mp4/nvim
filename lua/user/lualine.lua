@@ -72,7 +72,7 @@ lualine.setup({
     icons_enabled = true,
     theme = "palenight",
     section_separators = { left = '', right = '' },
-    component_separators = { left = '│', right = '│' },
+    component_separators = { left = ' ', right = ' ' },
     disabled_filetypes = { "alpha", "dashboard", "NvimTree", "Outline" },
     always_divide_middle = true,
   },
