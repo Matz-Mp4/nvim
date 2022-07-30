@@ -3,7 +3,6 @@ if not status_ok then
   return
 end
 
-local kind = require('lspsaga.lspkind')
 
 saga.init_lsp_saga({
   border_style = "single",
@@ -36,14 +35,14 @@ saga.init_lsp_saga({
   -- preview lines of lsp_finder and definition preview
   max_preview_lines = 10,
   -- use emoji lightbulb in default
-  code_action_icon = "💡",
+  code_action_icon = " ",
   -- if true can press number to execute the codeaction in codeaction window
   code_action_num_shortcut = true,
 
   code_action_lightbulb = {
     enable = true,
     sign = true,
-    enable_in_insert = true,
+    enable_in_insert = false,
     sign_priority = 20,
     virtual_text = true,
   },
