@@ -3,3 +3,6 @@ local git_blame = require('gitblame')
 
 git_blame.is_blame_text_available() -- Returns a boolean value indicating whether blame message is available
 git_blame.get_current_blame_text() --  Returns a string with blame message
+
+vim.g.gitblame_message_template = "<summary> • <date> • <author>"
+vim.g.gitblame_highlight_group = "LineNr"
