@@ -8,18 +8,28 @@ vim.keymap.set("n", "Z", require("lspsaga.hover").render_hover_doc, { silent = t
 local action = require("lspsaga.action")
 -- scroll down hover doc or scroll in definition preview
 vim.keymap.set("n", "<C-a>", function()
-    action.smart_scroll_with_saga(1)
+  action.smart_scroll_with_saga(1)
 end, { silent = true })
 -- scroll up hover doc
 vim.keymap.set("n", "<C-s>", function()
-    action.smart_scroll_with_saga(-1)
+  action.smart_scroll_with_saga(-1)
 end, { silent = true })
 
 saga.init_lsp_saga({
   border_style = "single",
+  show_diagnostic_source = true,
+  rename_in_select = true,
   code_action_keys = {
     quit = "q",
     exec = "<CR>",
+  },
+
+  symbol_in_winbar = {
+    in_custom = false,
+    enable = false,
+    separator = ' ',
+    show_file = true,
+    click_support = false,
   },
 
   finder_icons = {
@@ -50,7 +60,6 @@ saga.init_lsp_saga({
   },
   diagnostic_header = { " ", " ", " ", "ﴞ " },
   -- show diagnostic source
-  show_diagnostic_source = true,
   -- add bracket or something with diagnostic source, just have 2 elements
   diagnostic_source_bracket = {},
   -- preview lines of lsp_finder and definition preview
@@ -64,7 +73,7 @@ saga.init_lsp_saga({
     enable = true,
     sign = true,
     enable_in_insert = false,
-    sign_priority = 20,
+    sign_priority = 10,
     virtual_text = true,
   },
 })

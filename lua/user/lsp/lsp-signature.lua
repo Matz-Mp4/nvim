@@ -1,6 +1,5 @@
 
-local status_ok, signature = pcall(require, "lsp_signature")
-if not status_ok then
+local status_ok, signature = pcall(require, "lsp_signature") if not status_ok then
   return
 end
 
@@ -28,7 +27,7 @@ local cfg = {
   hint_scheme = "Comment",
   use_lspsaga = true, -- set to true if you want to use lspsaga popup
   hi_parameter = "LspSignatureActiveParameter", -- how your parameter will be highlight
-  max_height = 12, -- max height of signature floating_window, if content is more than max_height, you can scroll down
+  max_height = 30, -- max height of signature floating_window, if content is more than max_height, you can scroll down
   -- to view the hiding contents
   max_width = 120, -- max_width of signature floating_window, line will be wrapped if exceed max_width
   handler_opts = {

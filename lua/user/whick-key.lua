@@ -95,7 +95,7 @@ local mappings = {
     "Find files",
   },
   ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
-  ["z"] = {":ZenMode<cr>", "Zen Mode "},
+  ["z"] = { ":ZenMode<cr>", "Zen Mode " },
 
   p = {
     name = "Packer",
@@ -109,7 +109,7 @@ local mappings = {
   g = {
     name = "Git",
     -- g = { "<cmd>lua _LAZYGIT_TOGGLE()<CR>", "Lazygit" },
-    B = {":GitBlameToggle<cr>", "Toggle Git Blame"},
+    B = { ":GitBlameToggle<cr>", "Toggle Git Blame" },
     j = { "<cmd>lua require 'gitsigns'.next_hunk()<cr>", "Next Hunk" },
     k = { "<cmd>lua require 'gitsigns'.prev_hunk()<cr>", "Prev Hunk" },
     l = { "<cmd>lua require 'gitsigns'.blame_line()<cr>", "Blame" },
@@ -167,14 +167,17 @@ local mappings = {
       "Prev Diagnostic",
     },
     l = { "<cmd>lua vim.lsp.codelens.run()<cr>", "CodeLens Action" },
-    q = { "<cmd>lua vim.lsp.diagnostic.set_loclist()<cr>", "Quickfix" },
+    h = { "<cmd>Lspsaga hover_doc<cr>", "Hover Doc -> (Z = KeyMap)"},
+    -- q = { "<cmd>lua vim.lsp.diagnostic.set_loclist()<cr>", "Quickfix" },
     -- r = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename" },
     r = { "<cmd>Lspsaga rename<CR>", "Rename" },
     s = { "<cmd>Telescope lsp_document_symbols<cr>", "Document Symbols" },
-    S = {
-      "<cmd>Lspsaga preview_definition<CR>", "Documentaion"
+    p = {
+      "<cmd>Lspsaga preview_definition<CR>", "Preview Definition"
     },
-    F = {"<cmd>lua vim.lsp.buf.signature_help()<cr>", "Function signature"},
+    F = {
+      "<cmd>Lspsaga signature_help<cr>", "Signature Help"
+    },
   },
   s = {
     name = "Search",
