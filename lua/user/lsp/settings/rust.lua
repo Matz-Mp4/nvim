@@ -16,7 +16,7 @@ return {
         enable = true
       },
       checkOnSave = {
-        command = "clippy",
+        command = "true",
       },
     }
   }

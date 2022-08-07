@@ -29,9 +29,16 @@ lsp_installer.on_server_ready(function(server)
   if server == "rust_analyzer" then
     local rust_opts = require("user.lsp.settings.rust")
     opts = vim.tbl_deep_extend("force", rust_opts, opts)
-
     -- require 'lspconfig'.rust_analyzer.setup {}
   end
+
+  if server == "jdtls" then
+    local java_opts = require("user.lsp.settings.java")
+    opts = vim.tbl_deep_extend("force", java_opts, opts)
+    -- require 'lspconfig'.rust_analyzer.setup {}
+  end
+
+
 
   -- This setup() function is exactly the same as lspconfig's setup function.
   -- Refer to https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
