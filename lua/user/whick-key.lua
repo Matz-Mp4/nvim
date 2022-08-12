@@ -167,7 +167,7 @@ local mappings = {
       "Prev Diagnostic",
     },
     l = { "<cmd>lua vim.lsp.codelens.run()<cr>", "CodeLens Action" },
-    h = { "<cmd>Lspsaga hover_doc<cr>", "Hover Doc -> (Z = KeyMap)"},
+    h = { "<cmd>Lspsaga hover_doc<cr>", "Hover Doc -> (Z = KeyMap)" },
     -- q = { "<cmd>lua vim.lsp.diagnostic.set_loclist()<cr>", "Quickfix" },
     -- r = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename" },
     r = { "<cmd>Lspsaga rename<CR>", "Rename" },
@@ -198,6 +198,13 @@ local mappings = {
     e = { "<cmd>PickEmoji<cr>", "Pick Emoji" },
     s = { "<cmd>PickSymbols<cr>", "Pick Symbols" },
 
+  },
+
+  r = {
+    name = "Replace",
+    r = { "<cmd>lua require('spectre').open()<cr>", "Replace" },
+    w = { "<cmd>lua require('spectre').open_visual({select_word=true})<cr>", "Replace Word" },
+    f = { "<cmd>lua require('spectre').open_file_search()<cr>", "Replace Buffer" },
   }
 }
 

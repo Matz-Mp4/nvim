@@ -236,6 +236,11 @@ _G.packer_plugins = {
     path = "/home/matz/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-spectre"] = {
+    loaded = true,
+    path = "/home/matz/.local/share/nvim/site/pack/packer/start/nvim-spectre",
+    url = "https://github.com/nvim-pack/nvim-spectre"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/home/matz/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
