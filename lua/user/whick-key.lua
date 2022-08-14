@@ -81,7 +81,7 @@ local opts = {
 local mappings = {
   --"Comment Block Normal Mode => (Select the block with Visual Mode then switch to Normal mode and hit the keymap)"
   [" "] = { '<ESC><CMD>lua require("Comment.api").toggle.blockwise(vim.fn.visualmode())<CR>', "Comment a Block" },
-  ["/"] = {"<CMD>lua require('Comment.api').toggle.blockwise.current()<CR>", "Comment"},
+  ["/"] = { "<CMD>lua require('Comment.api').toggle.blockwise.current()<CR>", "Comment" },
   ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
   ["b"] = {
     "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
@@ -207,7 +207,14 @@ local mappings = {
     r = { "<cmd>lua require('spectre').open()<cr>", "Replace" },
     w = { "<cmd>lua require('spectre').open_visual({select_word=true})<cr>", "Replace Word" },
     f = { "<cmd>lua require('spectre').open_file_search()<cr>", "Replace Buffer" },
-  }
+  },
+  t = {
+    name = "Terminal",
+    f = { "<cmd>ToggleTerm direction=float<cr>", "Float" },
+    h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
+    v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
+  },
+
 }
 
 local vopts = {

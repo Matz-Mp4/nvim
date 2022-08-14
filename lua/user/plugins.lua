@@ -30,7 +30,7 @@ end
 
 -- Install your plugins here
 return packer.startup(function(use)
-  -- My plugins that I use 
+  -- My plugins that I use
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "nvim-lua/popup.nvim"
@@ -43,9 +43,11 @@ return packer.startup(function(use)
   use "moll/vim-bbye"
   use "goolord/alpha-nvim"
   use "williamboman/mason.nvim"
+  use "akinsho/toggleterm.nvim"
 
   --Markdown
-  use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+  use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install",
+    setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 
   --ColorSchemes
   use "Lunarvim/colorschemes"
@@ -70,15 +72,15 @@ return packer.startup(function(use)
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
-  use "williamboman/mason-lspconfig.nvim" 
+  use "williamboman/mason-lspconfig.nvim"
   use "ray-x/lsp_signature.nvim"
   use "glepnir/lspsaga.nvim"
 
-   -- Telescope
+  -- Telescope
   use "nvim-telescope/telescope.nvim"
   use 'nvim-telescope/telescope-media-files.nvim'
 
-   -- Treesitter
+  -- Treesitter
   use {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
@@ -98,10 +100,10 @@ return packer.startup(function(use)
 
   --Which-key
   use "folke/which-key.nvim"
- 
+
   --icon-picker
   use "stevearc/dressing.nvim"
-  use"ziontee113/icon-picker.nvim"
+  use "ziontee113/icon-picker.nvim"
 
   -- Debugging
   use "mfussenegger/nvim-dap"
@@ -112,10 +114,10 @@ return packer.startup(function(use)
 
   --Nvim-spectre
   use "https://github.com/nvim-pack/nvim-spectre"
-  
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
-  
+
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
