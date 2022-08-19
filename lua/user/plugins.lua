@@ -51,12 +51,14 @@ return packer.startup(function(use)
 
   --ColorSchemes
   use "Lunarvim/colorschemes"
+  use "decaycs/decay.nvim"
   -- use "lunarvim/onedarker.nvim"
   -- use "navarasu/onedark.nvim"
   use "yong1le/darkplus.nvim"
   --use 'navarasu/onedark.nvim'
   use "luisiacc/gruvbox-baby"
   use 'Mofiqul/dracula.nvim'
+
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions

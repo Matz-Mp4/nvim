@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/home/matz/.local/share/nvim/site/pack/packer/start/darkplus.nvim",
     url = "https://github.com/yong1le/darkplus.nvim"
   },
+  ["decay.nvim"] = {
+    loaded = true,
+    path = "/home/matz/.local/share/nvim/site/pack/packer/start/decay.nvim",
+    url = "https://github.com/decaycs/decay.nvim"
+  },
   ["dracula.nvim"] = {
     loaded = true,
     path = "/home/matz/.local/share/nvim/site/pack/packer/start/dracula.nvim",
