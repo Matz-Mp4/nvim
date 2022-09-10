@@ -1,35 +1,14 @@
-local status_ok, saga = pcall(require, "lspsaga")
+local status_ok, saga = pcall(require, 'lspsaga')
 if not status_ok then
   return
 end
 
-vim.keymap.set("n", "Z", require("lspsaga.hover").render_hover_doc, { silent = true })
-
-local action = require("lspsaga.action")
--- scroll down hover doc or scroll in definition preview
-vim.keymap.set("n", "<C-a>", function()
-  action.smart_scroll_with_saga(1)
-end, { silent = true })
--- scroll up hover doc
-vim.keymap.set("n", "<C-s>", function()
-  action.smart_scroll_with_saga(-1)
-end, { silent = true })
-
 saga.init_lsp_saga({
   border_style = "single",
-  show_diagnostic_source = true,
   rename_in_select = true,
   code_action_keys = {
     quit = "q",
     exec = "<CR>",
-  },
-
-  symbol_in_winbar = {
-    in_custom = false,
-    enable = false,
-    separator = ' ',
-    show_file = true,
-    click_support = false,
   },
 
   finder_icons = {
@@ -60,8 +39,6 @@ saga.init_lsp_saga({
   },
   diagnostic_header = { " ", " ", " ", "ﴞ " },
   -- show diagnostic source
-  -- add bracket or something with diagnostic source, just have 2 elements
-  diagnostic_source_bracket = {},
   -- preview lines of lsp_finder and definition preview
   max_preview_lines = 20,
   -- use emoji lightbulb in default
@@ -70,10 +47,18 @@ saga.init_lsp_saga({
   code_action_num_shortcut = true,
 
   code_action_lightbulb = {
-    enable = true,
+    enable = false,
     sign = true,
     enable_in_insert = false,
     sign_priority = 10,
     virtual_text = true,
+  },
+
+  definition_action_keys = {
+    edit = '<C-c>o',
+    vsplit = '<C-c>v',
+    split = '<C-c>i',
+    tabe = '<C-c>t',
+    quit = 'q',
   },
 })

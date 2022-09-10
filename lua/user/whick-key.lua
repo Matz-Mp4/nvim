@@ -161,21 +161,21 @@ local mappings = {
     i = { "<cmd>LspInfo<cr>", "Info" },
     I = { "<cmd>LspInstallInfo<cr>", "Installer Info" },
     j = {
-      "<cmd>lua vim.lsp.diagnostic.goto_next()<CR>",
+      "<cmd>Lspsaga diagnostic_jump_next<CR>",
       "Next Diagnostic",
     },
     k = {
-      "<cmd>lua vim.lsp.diagnostic.goto_prev()<cr>",
+      "<cmd>Lspsaga diagnostic_jump_prev<CR>",
       "Prev Diagnostic",
     },
     l = { "<cmd>lua vim.lsp.codelens.run()<cr>", "CodeLens Action" },
-    h = { "<cmd>Lspsaga hover_doc<cr>", "Hover Doc -> (Z = KeyMap)" },
+    h = { "<cmd>Lspsaga hover_doc<cr>", "Hover Doc" },
     -- q = { "<cmd>lua vim.lsp.diagnostic.set_loclist()<cr>", "Quickfix" },
     -- r = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename" },
     r = { "<cmd>Lspsaga rename<CR>", "Rename" },
     s = { "<cmd>Telescope lsp_document_symbols<cr>", "Document Symbols" },
     p = {
-      "<cmd>Lspsaga preview_definition<CR>", "Preview Definition"
+      "<cmd>Lspsaga peek_definition<CR>", "Peek Definition"
     },
     F = {
       "<cmd>Lspsaga signature_help<cr>", "Signature Help"
