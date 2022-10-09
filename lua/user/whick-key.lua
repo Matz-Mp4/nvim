@@ -180,6 +180,11 @@ local mappings = {
     F = {
       "<cmd>Lspsaga signature_help<cr>", "Signature Help"
     },
+
+    t = {
+      "<cmd>TroubleToggle<cr>", "Trouble"
+    }
+
   },
   s = {
     name = "Search",
