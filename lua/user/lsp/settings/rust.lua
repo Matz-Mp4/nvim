@@ -15,8 +15,12 @@ return {
       procMacro = {
         enable = true
       },
+
+      lens = {
+        enable = true,
+      },
       checkOnSave = {
-        command = "true",
+        command = "clippy",
       },
     }
   }

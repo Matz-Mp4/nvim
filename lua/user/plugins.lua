@@ -52,6 +52,8 @@ return packer.startup(function(use)
   --ColorSchemes
   use "Lunarvim/colorschemes"
   use "decaycs/decay.nvim"
+  use "morhetz/gruvbox"
+  use "folke/tokyonight.nvim"
   -- use "lunarvim/onedarker.nvim"
   -- use "navarasu/onedark.nvim"
   use "yong1le/darkplus.nvim"
