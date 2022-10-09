@@ -23,4 +23,6 @@ require "user.debug.dap-setup"
 require "user.debug.dap-languages"
 require "user.zen-mode"
 require "user.nvim-spectre"
-require "user.terminal" 
+require "user.terminal"
+--require "user.trouble"
+

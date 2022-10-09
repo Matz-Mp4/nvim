@@ -311,6 +311,11 @@ _G.packer_plugins = {
     path = "/home/matz/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
   },
+  ["trouble.nvim"] = {
+    loaded = true,
+    path = "/home/matz/.local/share/nvim/site/pack/packer/start/trouble.nvim",
+    url = "https://github.com/folke/trouble.nvim"
+  },
   ["vim-bbye"] = {
     loaded = true,
     path = "/home/matz/.local/share/nvim/site/pack/packer/start/vim-bbye",

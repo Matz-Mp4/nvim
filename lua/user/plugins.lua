@@ -79,6 +79,7 @@ return packer.startup(function(use)
   use "williamboman/mason-lspconfig.nvim"
   use "ray-x/lsp_signature.nvim"
   use "glepnir/lspsaga.nvim"
+  use "folke/trouble.nvim" 
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
