@@ -50,12 +50,12 @@ return packer.startup(function(use)
     setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 
   --ColorSchemes
-  use "Lunarvim/colorschemes"
+  --[[ use "Lunarvim/colorschemes" ]]
   use "decaycs/decay.nvim"
   use "morhetz/gruvbox"
   use "folke/tokyonight.nvim"
-  -- use "lunarvim/onedarker.nvim"
-  -- use "navarasu/onedark.nvim"
+  use "lunarvim/onedarker.nvim"
+  use "navarasu/onedark.nvim"
   use "yong1le/darkplus.nvim"
   use "luisiacc/gruvbox-baby"
   use 'Mofiqul/dracula.nvim'

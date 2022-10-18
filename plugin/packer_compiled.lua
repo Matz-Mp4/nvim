@@ -124,11 +124,6 @@ _G.packer_plugins = {
     path = "/home/matz/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  colorschemes = {
-    loaded = true,
-    path = "/home/matz/.local/share/nvim/site/pack/packer/start/colorschemes",
-    url = "https://github.com/Lunarvim/colorschemes"
-  },
   ["darkplus.nvim"] = {
     loaded = true,
     path = "/home/matz/.local/share/nvim/site/pack/packer/start/darkplus.nvim",
@@ -275,6 +270,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/matz/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
+  },
+  ["onedark.nvim"] = {
+    loaded = true,
+    path = "/home/matz/.local/share/nvim/site/pack/packer/start/onedark.nvim",
+    url = "https://github.com/navarasu/onedark.nvim"
+  },
+  ["onedarker.nvim"] = {
+    loaded = true,
+    path = "/home/matz/.local/share/nvim/site/pack/packer/start/onedarker.nvim",
+    url = "https://github.com/lunarvim/onedarker.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
