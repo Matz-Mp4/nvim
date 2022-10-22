@@ -44,6 +44,7 @@ return packer.startup(function(use)
   use "goolord/alpha-nvim"
   use "williamboman/mason.nvim"
   use "akinsho/toggleterm.nvim"
+  use "tiagovla/tokyodark.nvim"
 
   --Markdown
   use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install",
@@ -113,6 +114,7 @@ return packer.startup(function(use)
   -- Debugging
   use "mfussenegger/nvim-dap"
   use "rcarriga/nvim-dap-ui"
+
 
   --Zen-Mode
   use "folke/zen-mode.nvim"

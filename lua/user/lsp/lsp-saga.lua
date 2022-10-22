@@ -4,7 +4,9 @@ if not status_ok then
 end
 
 saga.init_lsp_saga({
-  border_style = "single",
+  -- "single" | "double" | "rounded" | "bold" | "plus"
+  border_style = "rounded",
+  --[[ saga_winblend = 20, ]]
   rename_in_select = true,
   code_action_keys = {
     quit = "q",
