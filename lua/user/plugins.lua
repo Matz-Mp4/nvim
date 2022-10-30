@@ -45,6 +45,7 @@ return packer.startup(function(use)
   use "williamboman/mason.nvim"
   use "akinsho/toggleterm.nvim"
   use "tiagovla/tokyodark.nvim"
+  use "feline-nvim/feline.nvim"
 
   --Markdown
   use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install",
@@ -56,7 +57,7 @@ return packer.startup(function(use)
   use "morhetz/gruvbox"
   use "folke/tokyonight.nvim"
   use "lunarvim/onedarker.nvim"
-  use "navarasu/onedark.nvim"
+  --[[ use "navarasu/onedark.nvim" ]]
   use "yong1le/darkplus.nvim"
   use "luisiacc/gruvbox-baby"
   use 'Mofiqul/dracula.nvim'
