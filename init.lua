@@ -1,4 +1,5 @@
 require "user.settings"
+require "user.transparent"
 require "user.keymaps"
 require "user.plugins"
 require "user.colorscheme"
@@ -12,7 +13,7 @@ require "user.gitsign"
 require "user.nvim-tree"
 require "user.bufferline"
 require "user.indentline"
-require "user.alpha"
+--[[ require "user.alpha" ]]
 require "user.whick-key"
 require "user.impatient"
 --[[ require "user.lualine" ]]
@@ -26,4 +27,5 @@ require "user.nvim-spectre"
 require "user.terminal"
 require "user.trouble"
 require "user.feline"
+require "user.dashboard"
 

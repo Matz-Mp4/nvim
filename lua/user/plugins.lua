@@ -46,6 +46,8 @@ return packer.startup(function(use)
   use "akinsho/toggleterm.nvim"
   use "tiagovla/tokyodark.nvim"
   use "feline-nvim/feline.nvim"
+  use "https://github.com/xiyaowong/nvim-transparent"
+  use "glepnir/dashboard-nvim"
 
   --Markdown
   use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install",

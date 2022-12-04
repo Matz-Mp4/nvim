@@ -82,7 +82,7 @@ local mappings = {
   --"Comment Block Normal Mode => (Select the block with Visual Mode then switch to Normal mode and hit the keymap)"
   [" "] = { '<ESC><CMD>lua require("Comment.api").toggle.blockwise(vim.fn.visualmode())<CR>', "Comment a Block" },
   ["/"] = { "<CMD>lua require('Comment.api').toggle.blockwise.current()<CR>", "Comment" },
-  ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
+  ["a"] = { "<cmd>Dashboard<cr>", "Alpha" },
   ["b"] = {
     "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
     "Buffers",
