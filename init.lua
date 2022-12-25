@@ -13,10 +13,9 @@ require "user.gitsign"
 require "user.nvim-tree"
 require "user.bufferline"
 require "user.indentline"
---[[ require "user.alpha" ]]
+require "user.alpha"
 require "user.whick-key"
 require "user.impatient"
---[[ require "user.lualine" ]]
 require "user.icon-picker"
 require "user.mason"
 require "user.git-blame"
@@ -27,5 +26,3 @@ require "user.nvim-spectre"
 require "user.terminal"
 require "user.trouble"
 require "user.feline"
-require "user.dashboard"
-

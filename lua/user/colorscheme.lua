@@ -1,4 +1,4 @@
-local my_colorscheme = "onedarker"
+local my_colorscheme = "tokyodark"
 --vim.cmd "colorscheme onedark" 
 vim.g.onedarker_italic_keywords = true
 vim.g.onedarker_italic_functions = false

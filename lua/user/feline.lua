@@ -210,8 +210,8 @@ local comps = {
       provider = 'lsp_client_names',
       left_sep = ' ',
       right_sep = ' ',
-       icon = '  ',
-     -- icon = '慎',
+      icon = '  ',
+      -- icon = '慎',
       hl = {
         fg = colors.yellow
       }
@@ -313,4 +313,3 @@ require 'feline'.setup {
     bufnames = {}
   }
 }
-

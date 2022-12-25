@@ -48,6 +48,8 @@ return packer.startup(function(use)
   use "feline-nvim/feline.nvim"
   use "https://github.com/xiyaowong/nvim-transparent"
   use "glepnir/dashboard-nvim"
+  use 'edluffy/specs.nvim'
+
 
   --Markdown
   use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install",
@@ -83,7 +85,7 @@ return packer.startup(function(use)
   use "williamboman/mason-lspconfig.nvim"
   use "ray-x/lsp_signature.nvim"
   use "glepnir/lspsaga.nvim"
-  use "folke/trouble.nvim" 
+  use "folke/trouble.nvim"
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
