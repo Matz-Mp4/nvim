@@ -97,7 +97,6 @@ local mappings = {
     "Find files",
   },
   ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
-  ["z"] = { ":ZenMode<cr>", "Zen Mode " },
 
   p = {
     name = "Packer",
