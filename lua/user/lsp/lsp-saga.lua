@@ -3,64 +3,67 @@ if not status_ok then
   return
 end
 
-saga.init_lsp_saga({
-  -- "single" | "double" | "rounded" | "bold" | "plus"
-  border_style = "rounded",
-  --[[ saga_winblend = 20, ]]
-  rename_in_select = true,
-  code_action_keys = {
-    quit = "q",
-    exec = "<CR>",
+saga.setup({
+  preview = {
+    lines_above = 0,
+    lines_below = 10,
   },
-
-  finder_icons = {
-    def = '  ',
-    ref = '諭 ',
-    link = '  ',
+  scroll_preview = {
+    scroll_down = '<C-f>',
+    scroll_up = '<C-b>',
   },
-  move_in_saga = { prev = '<C-p>', next = '<C-n>' },
-  -- Error, Warn, Info, Hint
-  -- use emoji like
-  -- { "🙀", "😿", "😾", "😺" }
-  -- or
-  -- { "😡", "😥", "😤", "😐" }
-  -- and diagnostic_header can be a function type
-  -- must return a string and when diagnostic_header
-  -- is function type it will have a param `entry`
-  -- entry is a table type has these filed
-  -- { bufnr, code, col, end_col, end_lnum, lnum, message, severity, source }
+  request_timeout = 2000,
 
-  finder_action_keys = {
-    open = "o",
-    vsplit = "s",
-    split = "i",
-    tabe = "t",
-    quit = "q",
-    scroll_down = "<C-f>",
-    scroll_up = "<C-b>", -- quit can be a table
-  },
-  diagnostic_header = { " ", " ", " ", "ﴞ " },
-  -- show diagnostic source
-  -- preview lines of lsp_finder and definition preview
-  max_preview_lines = 20,
-  -- use emoji lightbulb in default
-  code_action_icon = " ",
-  -- if true can press number to execute the codeaction in codeaction window
-  code_action_num_shortcut = true,
-
-  code_action_lightbulb = {
-    enable = false,
-    sign = true,
-    enable_in_insert = false,
-    sign_priority = 10,
-    virtual_text = true,
-  },
-
-  definition_action_keys = {
+  definition = {
     edit = '<C-c>o',
     vsplit = '<C-c>v',
     split = '<C-c>i',
     tabe = '<C-c>t',
     quit = 'q',
+    close = '<Esc>',
+  },
+
+  code_action = {
+    num_shortcut = true,
+    keys = {
+      -- string |table type
+      quit = 'q',
+      exec = '<CR>',
+    },
+  },
+  diagnostic = {
+    show_code_action = true,
+    show_source = true,
+    jump_num_shortcut = true,
+    keys = {
+      exec_action = 'o',
+      quit = 'q',
+      go_action = 'g'
+    },
+  },
+
+  ui = {
+    -- currently only round theme
+    theme = 'round',
+    -- this option only work in neovim 0.9
+    title = true,
+    -- border type can be single,double,rounded,solid,shadow.
+    border = 'solid',
+    winblend = 0,
+    expand = '',
+    collapse = '',
+    preview = ' ',
+    code_action = '💡',
+    diagnostic = '🐞',
+    incoming = ' ',
+    outgoing = ' ',
+    colors = {
+      --float window normal background color
+      normal_bg = '#001536',
+      --title background color
+      title_bg = '#afd700',
+
+    },
+    kind = {},
   },
 })
