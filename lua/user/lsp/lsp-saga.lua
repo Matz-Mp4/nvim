@@ -3,6 +3,9 @@ if not status_ok then
   return
 end
 
+local keymap = vim.keymap.set
+keymap("n","gd", "<cmd>Lspsaga goto_definition<CR>")
+
 saga.setup({
   preview = {
     lines_above = 0,
@@ -48,7 +51,7 @@ saga.setup({
     -- this option only work in neovim 0.9
     title = true,
     -- border type can be single,double,rounded,solid,shadow.
-    border = 'solid',
+    border = 'rounded',
     winblend = 0,
     expand = '',
     collapse = '',
