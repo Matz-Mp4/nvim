@@ -20,11 +20,6 @@ require("nvim-tree").setup({
   filters = {
     dotfiles = true,
   },
-  ignore_ft_on_setup = {
-    "startify",
-    "dashboard",
-    "alpha",
-  },
   diagnostics = {
     enable = true,
     icons = {

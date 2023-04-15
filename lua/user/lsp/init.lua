@@ -15,5 +15,5 @@ require("mason-lspconfig").setup_handlers {
   end,
 }
 require("user.lsp.handlers").setup()
-require("user.lsp.lsp-signature")
+--[[ require("user.lsp.lsp-signature") ]]
 require("user.lsp.lsp-saga");

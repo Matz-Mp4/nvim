@@ -28,6 +28,7 @@ saga.setup({
 
   code_action = {
     num_shortcut = true,
+    extend_gitsigns = true,
     keys = {
       -- string |table type
       quit = 'q',
@@ -38,10 +39,18 @@ saga.setup({
     show_code_action = true,
     show_source = true,
     jump_num_shortcut = true,
+    max_width = 0.7,
+    max_height = 0.6,
+    max_show_width = 0.9,
+    max_show_height = 0.6,
+    text_hl_follow = true,
+    border_follow = true,
     keys = {
       exec_action = 'o',
       quit = 'q',
-      go_action = 'g'
+      go_action = 'g',
+      expand_or_jump = '<CR>',
+      quit_in_show = { 'q', '<ESC>' },
     },
   },
 
