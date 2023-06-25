@@ -17,7 +17,7 @@ require "user.alpha"
 require "user.whick-key"
 require "user.impatient"
 require "user.mason"
-require "user.git-blame"
+--[[ require "user.git-blame" ]]
 require "user.nvim-spectre"
 require "user.terminal"
 require "user.feline"
