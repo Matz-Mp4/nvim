@@ -183,14 +183,6 @@ local mappings = {
     C = { "<cmd>Telescope commands<cr>", "Commands" },
   },
 
-  i = {
-    name = "Icons",
-    a = { "<cmd>PickEverything<cr>", "Pick all" },
-    n = { "<cmd>PickNerd<cr>", "Pick NerdFontIcon" },
-    e = { "<cmd>PickEmoji<cr>", "Pick Emoji" },
-    s = { "<cmd>PickSymbols<cr>", "Pick Symbols" },
-
-  },
 
   r = {
     name = "Replace",
