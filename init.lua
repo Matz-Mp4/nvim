@@ -13,7 +13,7 @@ require "user.gitsign"
 require "user.nvim-tree"
 require "user.bufferline"
 require "user.indentline"
-require "user.alpha"
+--[[ require "user.alpha" ]]
 require "user.whick-key"
 require "user.impatient"
 require "user.mason"
