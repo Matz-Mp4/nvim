@@ -81,7 +81,7 @@ local opts = {
 local mappings = {
     --"Comment Block Normal Mode => (Select the block with Visual Mode then switch to Normal mode and hit the keymap)"
     ["/"] = { "<CMD>lua require('Comment.api').toggle.blockwise.current()<CR>", "Comment" },
-    ["a"] = { "<cmd>Dashboard<cr>", "Alpha" },
+    --[[ ["a"] = { "<cmd>Dashboard<cr>", "Alpha" }, ]]
     ["b"] = {
         "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
         "Buffers",
@@ -181,12 +181,12 @@ local mappings = {
         w = { "<cmd>lua require('spectre').open_visual({select_word=true})<cr>", "Replace Word" },
         f = { "<cmd>lua require('spectre').open_file_search()<cr>", "Replace Buffer" },
     },
-    t = {
-        name = "Terminal",
-        f = { "<cmd>ToggleTerm direction=float<cr>", "Float" },
-        h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
-        v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
-    },
+ --   t = {
+ --       name = "Terminal",
+ --       f = { "<cmd>ToggleTerm direction=float<cr>", "Float" },
+ --       h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
+ --       v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
+ --   },
 
 }
 

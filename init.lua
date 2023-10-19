@@ -7,17 +7,12 @@ require "user.lsp"
 require "user.cmp"
 require "user.telescope"
 require "user.treesitter"
---[[ require "user.autopairs" ]]
 require "user.comment"
 require "user.gitsign"
 require "user.nvim-tree"
 require "user.bufferline"
 require "user.indentline"
---[[ require "user.alpha" ]]
 require "user.whick-key"
-require "user.impatient"
 require "user.mason"
---[[ require "user.git-blame" ]]
 require "user.nvim-spectre"
-require "user.terminal"
 require "user.feline"
