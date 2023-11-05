@@ -40,15 +40,15 @@ return packer.startup(function(use)
   use "lewis6991/impatient.nvim"
   use 'nvim-lualine/lualine.nvim'
   use "akinsho/bufferline.nvim"
-  use "moll/vim-bbye"
-  use "goolord/alpha-nvim"
+  --[[ use "moll/vim-bbye" ]]
+  --[[ use "goolord/alpha-nvim" ]]
   use "williamboman/mason.nvim"
-  use "akinsho/toggleterm.nvim"
   use "tiagovla/tokyodark.nvim"
   use "feline-nvim/feline.nvim"
   use "https://github.com/xiyaowong/nvim-transparent"
   use "glepnir/dashboard-nvim"
   use 'edluffy/specs.nvim'
+  --[[ use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'} ]]
 
 
   --Markdown
@@ -58,6 +58,7 @@ return packer.startup(function(use)
   --ColorSchemes
   --[[ use "Lunarvim/colorschemes" ]]
   use "decaycs/decay.nvim"
+  use { 'codota/tabnine-nvim', run = "./dl_binaries.sh" }
   use "morhetz/gruvbox"
   use "folke/tokyonight.nvim"
   use "lunarvim/onedarker.nvim"
@@ -111,18 +112,6 @@ return packer.startup(function(use)
 
   --Which-key
   use "folke/which-key.nvim"
-
-  --icon-picker
-  use "stevearc/dressing.nvim"
-  use "ziontee113/icon-picker.nvim"
-
-  -- Debugging
-  use "mfussenegger/nvim-dap"
-  use "rcarriga/nvim-dap-ui"
-
-
-  --Zen-Mode
-  use "folke/zen-mode.nvim"
 
   --Nvim-spectre
   use "https://github.com/nvim-pack/nvim-spectre"

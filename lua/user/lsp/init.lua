@@ -2,6 +2,7 @@ local status_ok, lspconfig = pcall(require, "lspconfig")
 if not status_ok then
   return
 end
+require'lspconfig'.kotlin_language_server.setup{}
 
 -- configure mason and it's LSP integration (provides the :LspInstall command)
 require("user.lsp.handlers").setup()
