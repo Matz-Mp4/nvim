@@ -48,6 +48,7 @@ return packer.startup(function(use)
   use "https://github.com/xiyaowong/nvim-transparent"
   use "glepnir/dashboard-nvim"
   use 'edluffy/specs.nvim'
+  use 'https://github.com/ggandor/leap.nvim'
   --[[ use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'} ]]
 
 
@@ -56,7 +57,7 @@ return packer.startup(function(use)
     setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 
   --ColorSchemes
-  --[[ use "Lunarvim/colorschemes" ]]
+  use "Lunarvim/colorschemes"
   use "decaycs/decay.nvim"
   use { 'codota/tabnine-nvim', run = "./dl_binaries.sh" }
   use "morhetz/gruvbox"
@@ -67,6 +68,7 @@ return packer.startup(function(use)
   use "luisiacc/gruvbox-baby"
   use 'Mofiqul/dracula.nvim'
   use "EdenEast/nightfox.nvim"
+  use "rebelot/kanagawa.nvim"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin

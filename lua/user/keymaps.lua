@@ -65,12 +65,15 @@ keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
-
 -- Telescope --
 keymap("n", "<leader>f", ":Telescope find_files<CR>", opts)
 --keymap("n", "<leader>f", ":Telescope find_files", opts)
 
 -- Nvimtree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+
+--Split configs
+keymap("n", "<leader>v", ":vsplit<CR>",opts)
+keymap("n", "<leader>t", ":split<CR>",opts)
 
 --return M
