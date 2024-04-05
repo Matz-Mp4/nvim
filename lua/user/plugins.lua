@@ -39,16 +39,19 @@ return packer.startup(function(use)
   use "lukas-reineke/indent-blankline.nvim"
   use "lewis6991/impatient.nvim"
   use 'nvim-lualine/lualine.nvim'
-  use "akinsho/bufferline.nvim"
+  --[[ use "akinsho/bufferline.nvim" ]]
   --[[ use "moll/vim-bbye" ]]
   --[[ use "goolord/alpha-nvim" ]]
   use "williamboman/mason.nvim"
   use "tiagovla/tokyodark.nvim"
   use "feline-nvim/feline.nvim"
   use "https://github.com/xiyaowong/nvim-transparent"
-  use "glepnir/dashboard-nvim"
-  use 'edluffy/specs.nvim'
   use 'https://github.com/ggandor/leap.nvim'
+  use {
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    requires = { {"nvim-lua/plenary.nvim"} }
+    }
   --[[ use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'} ]]
 
 
@@ -66,9 +69,7 @@ return packer.startup(function(use)
   --[[ use "navarasu/onedark.nvim" ]]
   use "yong1le/darkplus.nvim"
   use "luisiacc/gruvbox-baby"
-  use 'Mofiqul/dracula.nvim'
   use "EdenEast/nightfox.nvim"
-  use "rebelot/kanagawa.nvim"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -88,7 +89,6 @@ return packer.startup(function(use)
   use "williamboman/mason-lspconfig.nvim"
   use "ray-x/lsp_signature.nvim"
   use "glepnir/lspsaga.nvim"
-  use "folke/trouble.nvim"
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"

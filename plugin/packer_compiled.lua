@@ -84,11 +84,6 @@ _G.packer_plugins = {
     path = "/home/matz/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["bufferline.nvim"] = {
-    loaded = true,
-    path = "/home/matz/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
-    url = "https://github.com/akinsho/bufferline.nvim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/matz/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -129,20 +124,10 @@ _G.packer_plugins = {
     path = "/home/matz/.local/share/nvim/site/pack/packer/start/darkplus.nvim",
     url = "https://github.com/yong1le/darkplus.nvim"
   },
-  ["dashboard-nvim"] = {
-    loaded = true,
-    path = "/home/matz/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
-    url = "https://github.com/glepnir/dashboard-nvim"
-  },
   ["decay.nvim"] = {
     loaded = true,
     path = "/home/matz/.local/share/nvim/site/pack/packer/start/decay.nvim",
     url = "https://github.com/decaycs/decay.nvim"
-  },
-  ["dracula.nvim"] = {
-    loaded = true,
-    path = "/home/matz/.local/share/nvim/site/pack/packer/start/dracula.nvim",
-    url = "https://github.com/Mofiqul/dracula.nvim"
   },
   ["feline.nvim"] = {
     loaded = true,
@@ -174,6 +159,11 @@ _G.packer_plugins = {
     path = "/home/matz/.local/share/nvim/site/pack/packer/start/gruvbox-baby",
     url = "https://github.com/luisiacc/gruvbox-baby"
   },
+  harpoon = {
+    loaded = true,
+    path = "/home/matz/.local/share/nvim/site/pack/packer/start/harpoon",
+    url = "https://github.com/ThePrimeagen/harpoon"
+  },
   ["impatient.nvim"] = {
     loaded = true,
     path = "/home/matz/.local/share/nvim/site/pack/packer/start/impatient.nvim",
@@ -183,11 +173,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/matz/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
-  },
-  ["kanagawa.nvim"] = {
-    loaded = true,
-    path = "/home/matz/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
-    url = "https://github.com/rebelot/kanagawa.nvim"
   },
   ["leap.nvim"] = {
     loaded = true,
@@ -301,11 +286,6 @@ _G.packer_plugins = {
     path = "/home/matz/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
-  ["specs.nvim"] = {
-    loaded = true,
-    path = "/home/matz/.local/share/nvim/site/pack/packer/start/specs.nvim",
-    url = "https://github.com/edluffy/specs.nvim"
-  },
   ["tabnine-nvim"] = {
     loaded = true,
     path = "/home/matz/.local/share/nvim/site/pack/packer/start/tabnine-nvim",
@@ -330,11 +310,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/matz/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
-  },
-  ["trouble.nvim"] = {
-    loaded = true,
-    path = "/home/matz/.local/share/nvim/site/pack/packer/start/trouble.nvim",
-    url = "https://github.com/folke/trouble.nvim"
   },
   ["which-key.nvim"] = {
     loaded = true,

@@ -81,7 +81,7 @@ local opts = {
 local mappings = {
     --"Comment Block Normal Mode => (Select the block with Visual Mode then switch to Normal mode and hit the keymap)"
     ["/"] = { "<CMD>lua require('Comment.api').toggle.blockwise.current()<CR>", "Comment" },
-    ["a"] = { "<cmd>Dashboard<cr>", "Alpha" },
+    --[[ ["a"] = { "<cmd>function() harpoon:list():add()>", "Harpoon List" }, ]]
     ["b"] = {
         "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
         "Buffers",
@@ -90,21 +90,11 @@ local mappings = {
     ["w"] = { "<cmd>w!<CR>", "Save" },
     ["q"] = { "<cmd>q!<CR>", "Quit" },
     ["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
-    ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
     ["f"] = {
         "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
         "Find files",
     },
     ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
-
-    p = {
-        name = "Packer",
-        c = { "<cmd>PackerCompile<cr>", "Compile" },
-        i = { "<cmd>PackerInstall<cr>", "Install" },
-        s = { "<cmd>PackerSync<cr>", "Sync" },
-        S = { "<cmd>PackerStatus<cr>", "Status" },
-        u = { "<cmd>PackerUpdate<cr>", "Update" },
-    },
 
     g = {
         name = "Git",
@@ -181,12 +171,6 @@ local mappings = {
         w = { "<cmd>lua require('spectre').open_visual({select_word=true})<cr>", "Replace Word" },
         f = { "<cmd>lua require('spectre').open_file_search()<cr>", "Replace Buffer" },
     },
- --   t = {
- --       name = "Terminal",
- --       f = { "<cmd>ToggleTerm direction=float<cr>", "Float" },
- --       h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
- --       v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
- --   },
 
 }
 
