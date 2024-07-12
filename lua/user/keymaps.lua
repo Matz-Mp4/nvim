@@ -23,9 +23,9 @@ keymap("n", "<C-i>", "<C-i>", opts)
 
 -- Normal --
 -- Better window navigation
+keymap("n", "<m-k>", "<C-w>k", opts)
 keymap("n", "<m-h>", "<C-w>h", opts)
 keymap("n", "<m-j>", "<C-w>j", opts)
-keymap("n", "<m-k>", "<C-w>k", opts)
 keymap("n", "<m-l>", "<C-w>l", opts)
 
 -- Tabs --
@@ -45,8 +45,8 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- keymap("n", "<RightMouse>", ":Alpha<CR>", opts)
 
--- Move text up and down
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
+-- Move text up and down
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
 -- Visual --
@@ -75,5 +75,10 @@ keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 --Split configs
 keymap("n", "<leader>v", ":vsplit<CR>",opts)
 keymap("n", "<leader>t", ":split<CR>",opts)
+
+--Leap
+vim.keymap.set({'n', 'x', 'o'}, 's',  '<Plug>(leap-forward)')
+vim.keymap.set({'n', 'x', 'o'}, 'S',  '<Plug>(leap-backward)')
+vim.keymap.set({'n', 'x', 'o'}, 'gs', '<Plug>(leap-from-window)')
 
 --return M

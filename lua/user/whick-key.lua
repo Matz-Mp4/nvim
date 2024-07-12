@@ -87,8 +87,8 @@ local mappings = {
         "Buffers",
     },
     ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
-    ["w"] = { "<cmd>w!<CR>", "Save" },
-    ["q"] = { "<cmd>q!<CR>", "Quit" },
+    --[[ ["w"] = { "<cmd>w!<CR>", "Save" }, ]]
+    --[[ ["q"] = { "<cmd>q!<CR>", "Quit" }, ]]
     ["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
     ["f"] = {
         "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
@@ -99,7 +99,6 @@ local mappings = {
     g = {
         name = "Git",
         -- g = { "<cmd>lua _LAZYGIT_TOGGLE()<CR>", "Lazygit" },
-        B = { ":GitBlameToggle<cr>", "Toggle Git Blame" },
         j = { "<cmd>lua require 'gitsigns'.next_hunk()<cr>", "Next Hunk" },
         k = { "<cmd>lua require 'gitsigns'.prev_hunk()<cr>", "Prev Hunk" },
         l = { "<cmd>lua require 'gitsigns'.blame_line()<cr>", "Blame" },
@@ -127,10 +126,10 @@ local mappings = {
             "<cmd>Telescope lsp_document_diagnostics<cr>",
             "Document Diagnostics",
         },
-        w = {
-            "<cmd>Telescope lsp_workspace_diagnostics<cr>",
-            "Workspace Diagnostics",
-        },
+        --[[ w = { 
+            "<cmd>Telescope lsp_workspace_diagnostics<cr>", ]]
+            --[[ "Workspace Diagnostics", 
+        }, ]]
         f = { "<cmd>lua vim.lsp.buf.format()<cr>", "Format" },
         i = { "<cmd>LspInfo<cr>", "Info" },
         I = { "<cmd>LspInstallInfo<cr>", "Installer Info" },

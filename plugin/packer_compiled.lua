@@ -139,11 +139,6 @@ _G.packer_plugins = {
     path = "/home/matz/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
-  ["git-blame.nvim"] = {
-    loaded = true,
-    path = "/home/matz/.local/share/nvim/site/pack/packer/start/git-blame.nvim",
-    url = "https://github.com/f-person/git-blame.nvim"
-  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/matz/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
@@ -178,11 +173,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/matz/.local/share/nvim/site/pack/packer/start/leap.nvim",
     url = "https://github.com/ggandor/leap.nvim"
-  },
-  ["lsp_signature.nvim"] = {
-    loaded = true,
-    path = "/home/matz/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim",
-    url = "https://github.com/ray-x/lsp_signature.nvim"
   },
   ["lspsaga.nvim"] = {
     loaded = true,

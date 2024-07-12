@@ -87,7 +87,6 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
   use "williamboman/mason-lspconfig.nvim"
-  use "ray-x/lsp_signature.nvim"
   use "glepnir/lspsaga.nvim"
 
   -- Telescope
@@ -102,7 +101,6 @@ return packer.startup(function(use)
   use 'JoosepAlviste/nvim-ts-context-commentstring'
   -- Git
   use "lewis6991/gitsigns.nvim"
-  use "f-person/git-blame.nvim"
   --Nvim-Tree
   use {
     'kyazdani42/nvim-tree.lua',
